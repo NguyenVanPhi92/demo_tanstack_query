@@ -9,7 +9,7 @@ export default function MainLayout({ children }: Props) {
   return (
     <div className='grid min-h-screen grid-cols-4'>
       <aside className='col-span-1' aria-label='Sidebar'>
-        <div className='flex h-full flex-col overflow-y-auto bg-gray-100 py-4 px-3 shadow-lg'>
+        <div className='flex h-full flex-col overflow-y-auto bg-gray-100 px-3 py-4 shadow-lg'>
           <ul className='space-y-2'>
             <li>
               <NavLink
@@ -54,7 +54,8 @@ export default function MainLayout({ children }: Props) {
           </div>
         </div>
       </aside>
-      <main className='col-span-3 h-full py-4 px-3'>{children}</main>
+
+      <main className='col-span-3 h-full px-3 py-4'>{children}</main>
     </div>
   )
 }
